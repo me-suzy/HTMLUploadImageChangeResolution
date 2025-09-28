@@ -1,0 +1,71 @@
+Excelentă întrebare! Să îți explic diferența între cele două funcții:
+
+## 🗜️ **Compress Image** (Reduce file size)
+**Ce face:**
+- **Reduce dimensiunea fișierului** (KB/MB) fără să schimbe neapărat rezoluția
+- Elimină detalii pentru a face fișierul mai mic
+- Folosește algoritmi de compresie JPEG cu calitate redusă
+- **Rezultat:** Aceeași imagine dar cu mai puțini bytes
+
+**Exemplu:**
+- Imaginea originală: 2MB, 1920x1080px
+- După compresie: 300KB, 1920x1080px (aceeași rezoluție, dar fișier mai mic)
+
+## 🤖 **AI Upscale** (Enlarge and enhance)
+**Ce face:**
+- **Mărește rezoluția** imaginii (mai mulți pixeli)
+- Încearcă să păstreze sau să îmbunătățească calitatea
+- Folosește algoritmi avansați pentru a "ghici" pixelii noi
+- **Rezultat:** Imagine mai mare cu detalii îmbunătățite
+
+**Exemplu:**
+- Imaginea originală: 500KB, 640x480px
+- După AI upscale: 2MB, 1280x960px (rezoluție dublă, fișier mai mare)
+
+## 📊 **Comparație vizuală:**
+
+```
+COMPRESS:
+[1920x1080, 2MB] → [1920x1080, 300KB]
+📏 Aceeași mărime    💾 Fișier mai mic
+
+AI UPSCALE:
+[640x480, 500KB] → [1280x960, 2MB]
+📏 Mărime dublă      💾 Fișier mai mare
+```
+
+## 🔄 **În aplicația ta:**
+
+### Compress ON:
+```javascript
+// Setează calitatea JPEG la 70%
+image = compress_image(image, quality=70)
+```
+
+### AI Upscale ON:
+```javascript
+// Dublează rezoluția cu algoritmi avansați
+image = upscale_image_ai(image, scale_factor=2)
+// 1000x1000 → 2000x2000 pixeli
+```
+
+## 🎯 **Când să folosești fiecare:**
+
+**Compress** pentru:
+- ✅ Imagini pentru web (loading rapid)
+- ✅ Email attachments
+- ✅ Social media (limită de mărime)
+- ✅ Economisire spațiu
+
+**AI Upscale** pentru:
+- ✅ Print de calitate înaltă
+- ✅ Imagini mici care trebuie mărite
+- ✅ Îmbunătățirea detaliilor
+- ✅ Fotografii vechi cu rezoluție mică
+
+## ⚠️ **Important:**
+- **NU** poți folosi ambele simultan în aplicația ta
+- Dacă activezi unul, celălalt se dezactivează automat
+- Sunt operații opuse: unul mărește, altul micșorează
+
+Înțelegi acum diferența? 😊
