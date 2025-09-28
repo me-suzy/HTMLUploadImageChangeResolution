@@ -1,0 +1,43 @@
+Cum să rulezi aplicația:
+
+Instalează dependențele CMD:
+
+
+pip install -r requirements.txt
+
+Rulează aplicația cu CMD:
+
+python app.py
+
+Accesează aplicația:
+Deschide browser-ul la http://localhost:5000
+
+Funcționalități implementate:
+Frontend (HTML/CSS/JavaScript):
+
+✅ Upload fișiere - drag & drop sau click pentru a selecta
+✅ Multiple unități - px, cm, mm, in, pt, pc, %
+✅ Preview fișiere încărcate cu opțiunea de a le șterge
+✅ 5 moduri de redimensionare:
+
+Dimensiuni specifice (lățime/înălțime)
+Procentaj (cu slider)
+Aspect ratio (1:1, 16:9, etc.)
+Pentru dispozitive (email, desktop, tablet, mobile)
+Pentru social media (Instagram, Facebook, Twitter, etc.)
+
+
+✅ Compresie - buton toggle pentru a activa/dezactiva
+✅ AI Upscaling - buton toggle pentru a mări imaginile
+✅ Format output - JPG, PNG, WEBP, GIF, BMP, TIFF
+
+Backend (Python/Flask):
+
+✅ Procesare imagini cu toate setările
+✅ Compresie cu ajustarea calității
+✅ AI Upscaling folosind OpenCV
+✅ Salvare în folder și trimitere ca ZIP
+✅ Suport multiple formate
+✅ Conversie unități pentru dimensiuni
+
+Aplicația va salva imaginile procesate în folderul processed/ și va trimite un ZIP cu toate imaginile procesate către utilizator.
